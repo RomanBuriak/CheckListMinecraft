@@ -1,0 +1,102 @@
+@font-face {
+  font-family: MinecraftFont;
+  src: url("fonts/Minecraft Regular.otf");
+}
+
+body {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(images/171170.webp);
+  backdrop-filter: blur(3px);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  font-family: "MinecraftFont";
+}
+
+.container {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  border: 1px solid rgba(165, 165, 165);
+}
+
+.enterBlock {
+  display: flex;
+  justify-content: space-around;
+  width: 270px;
+}
+
+.addTaskInput {
+  outline: none;
+  font-family: "MinecraftFont";
+  font-size: 17px;
+}
+
+#addTaskButton {
+  background-color: rgb(152, 228, 38);
+  border: none;
+  border-bottom: 4.5px solid rgb(123, 180, 37);
+  padding: 5px;
+  color: white;
+  cursor: pointer;
+  transition: all ease 0.5s;
+  font-family: "MinecraftFont";
+}
+
+#addTaskButton:hover {
+  background-color: rgb(177, 255, 59);
+}
+
+.newData {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+#title {
+  color: white;
+}
+
+.tasksTitle {
+  color: rgb(177, 255, 59);
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  align-items: center;
+}
+
+.todo-item.checked {
+  background-color: rgba(144, 144, 144, 0.5);
+  opacity: 0.5;
+}
+
+.todo-button {
+  background-color: rgba(255, 87, 65);
+  border: none;
+  border-bottom: 4px solid rgba(182, 62, 46);
+  padding: 5px;
+  cursor: pointer;
+  transition: all ease 0.5s;
+}
+
+.todo-button:hover {
+  background-color: rgb(245, 106, 88);
+  border-bottom: 4px solid rgb(186, 84, 70);
+}
+
+.todo-button img {
+  width: 20px;
+}
+
+todo-desc {
+  font-size: 19px;
+}
